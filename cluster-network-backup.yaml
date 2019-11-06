@@ -1,0 +1,18 @@
+apiVersion: operator.openshift.io/v1
+kind: Network
+metadata:
+  creationTimestamp: "2019-11-05T14:26:26Z"
+  generation: 1
+  name: cluster
+  resourceVersion: "1053"
+  selfLink: /apis/operator.openshift.io/v1/networks/cluster
+  uid: 406238b8-ffd8-11e9-88ff-566f2f1f52ca
+spec:
+  clusterNetwork:
+  - cidr: 10.128.0.0/14
+    hostPrefix: 24
+  defaultNetwork:
+    type: OpenShiftSDN
+  serviceNetwork:
+  - 172.30.0.0/16
+status: {}
